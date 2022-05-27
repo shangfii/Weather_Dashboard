@@ -8,10 +8,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <link href="./assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+  
   <title>Weather Dashboard</title>
 </head>
 
@@ -21,8 +26,8 @@
     <h1 class="app-title">
       <i class="fas fa-temperature-high"></i> Weather Dashboard
     </h1>
-    <!-- <p>Search the weather for a specific city or click on a search history city to see weather forcast
-    </p> -->
+
+    <p> To see weather forcast, type the name of any city or click on a city you seached earlier </p> 
   </header>
 
   <!-- CSS sheet is similar to Bootstrame framework, where rows and col classes are used to dynamically modify window width, depending on screen size-->
@@ -30,7 +35,7 @@
     <!-- divs for search bar and search history contents -->
     <div class="col-12 col-md-4">
       <div class="card">
-        <h3 class="card-header text-uppercase">Search for a U.S. City:</h3>
+        <h3 class="card-header ">Search for any City:</h3>
         <form id="city-form" class="card-body">
           <input name="searchCity" id="searchCity" type="text" autofocus="true" class="form-input" />
           <button type="submit" class="btn">Search</button>
@@ -44,7 +49,8 @@
       </div>
     </div>
 
-    <!-- divs for displaying current weather conditions and five day forcast -->
+    <!-- display the current weather conditions and five day forcast -->
+    
     <div class="col-12 col-md-8">
       <div class="card" id="currentWeather">
         <h2 class="subtitle" id="cityWeather">City (Date)</h2><img id="currentIcon">
@@ -63,8 +69,9 @@
       </div>
     </div>
   </main>
-  <!-- Calling JS -->
-  <script src="./assets/js/script.js"></script>
+
+  <!-- link to JS -->
+  <script src="./Assets/js/script.js"></script>
 
 </body>
 
