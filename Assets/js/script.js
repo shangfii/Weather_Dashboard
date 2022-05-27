@@ -1,4 +1,4 @@
-// important querySelectors from HTML list
+// querySelectors from HTML list
 
 var cityFormEl = document.querySelector('#city-form');
 var searchHistoryButtonsEl = document.querySelector('#searchHistory-buttons');
@@ -12,8 +12,6 @@ var currentUvIndex = document.querySelector('#uvIndexResult');
 var currentIconEl = document.querySelector('#currentIcon');
 var currentWeatherCard = document.querySelector('#currentWeather');
 
-var deg =U+2109
-console.log(deg);
 
 // function to populate search history card calling localStorage
 
@@ -68,7 +66,7 @@ function renderLastSearchedCity(){
 
 var formSubmitHandler = function (event) {
   event.preventDefault();
-  var inputCity = nameInputEl.value.trim();
+  var cityToSearch = nameInputEl.value.trim();
 
   
   
@@ -117,7 +115,7 @@ var formSubmitHandler = function (event) {
             }
       }
     } else {
-      alert('Type the name of a city and search');
+      alert('Type the name of a city to search');
       }
 };
 
@@ -153,7 +151,7 @@ var getCityCord = function (city) {
         let dateMonth = dateObject.toLocaleDateString("en-US", {month: "long"});
         let dateDay = dateObject.toLocaleDateString("en-US", {day: "numeric"});
         let dateYear = dateObject.toLocaleDateString("en-US", {year: "numeric"});
-        let searchDate = dateMonth+'.'+dateDay+'.'+dateYear;
+        let searchDate = dateMonth+'/'+dateDay+'/'+dateYear;
 
         // display city and date to page
 
@@ -198,15 +196,15 @@ var getCityWeather = function (lat, lon) {
         currentUvIndex.textContent = ' '+data.current.uvi;
         // setting IF statements to display different background colors for UV index value, depending on favorable, moderate or severe conditions
           if(data.current.uvi<=2) {
-            currentUvIndex.setAttribute('style','background-color: green; color: white; border-radius: var(--border-radius); padding-right: 6px')
+            currentUvIndex.setAttribute('style','background-color: green; color: white; border-radius: var(--border-radius); padding-right: 13px')
           }else if(data.current.uvi<=5) {
-            currentUvIndex.setAttribute('style','background-color: yellow; border-radius: var(--border-radius); padding-right: 6px')
+            currentUvIndex.setAttribute('style','background-color: yellow; border-radius: var(--border-radius); padding-right: 3px')
           }else if(data.current.uvi<=7) {
-            currentUvIndex.setAttribute('style','background-color: orange; border-radius: var(--border-radius); padding-right: 6px')
+            currentUvIndex.setAttribute('style','background-color: orange; border-radius: var(--border-radius); padding-right: 3px')
           }else if(data.current.uvi<=10) {
-            currentUvIndex.setAttribute('style','background-color: red; color: white; border-radius: var(--border-radius); padding-right: 6px')
+            currentUvIndex.setAttribute('style','background-color: red; color: white; border-radius: var(--border-radius); padding-right: 3px')
           }else {
-            currentUvIndex.setAttribute('style','background-color: purple; color: white; border-radius: var(--border-radius); padding-right: 6px')
+            currentUvIndex.setAttribute('style','background-color: purple; color: white; border-radius: var(--border-radius); padding-right: 3px')
           }
         
         
@@ -247,7 +245,7 @@ var display5dayWeather = function (data5Day) {
     let dateMonth = dateObject.toLocaleDateString("en-US", {month: "long"});
     let dateDay = dateObject.toLocaleDateString("en-US", {day: "numeric"});
     let dateYear = dateObject.toLocaleDateString("en-US", {year: "numeric"});
-    let dateEl = dateMonth+'.'+dateDay+'.'+dateYear;
+    let dateEl = dateMonth+'/'+dateDay+'/'+dateYear;
 
     // Collect the weather icon info for each day
     let iconEl = data5Day[i].weather[0].icon
