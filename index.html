@@ -1,1 +1,71 @@
 
+
+   
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="./assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  
+  <header class="hero justify-center">
+    <h1 class="app-title">
+      <i class="fas fa-temperature-high"></i> Weather Dashboard
+    </h1>
+    <!-- <p>Search the weather for a specific city or click on a search history city to see weather forcast
+    </p> -->
+  </header>
+
+  <!-- CSS sheet is similar to Bootstrame framework, where rows and col classes are used to dynamically modify window width, depending on screen size-->
+  <main class="flex-row justify-space-between">
+    <!-- divs for search bar and search history contents -->
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search for a U.S. City:</h3>
+        <form id="city-form" class="card-body">
+          <input name="searchCity" id="searchCity" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search History</h3>
+        <div id="searchHistory-buttons" class="card-body">
+        </div>
+      </div>
+    </div>
+
+    <!-- divs for displaying current weather conditions and five day forcast -->
+    <div class="col-12 col-md-8">
+      <div class="card" id="currentWeather">
+        <h2 class="subtitle" id="cityWeather">City (Date)</h2><img id="currentIcon">
+        <div class="info-group">
+          <p>Temp:<span id="tempResult"></span></p>
+          <p>Wind:<span id="windResult"></span></p>
+          <p>Humidity:<span id="humidityResult"></span></p>
+          <p>UV Index:<span id="uvIndexResult"></span></p>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="subtitle">5-Day Forcast:</h2>
+        <div id="fiveDayWeather" class="flex-row justify-space-between">
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Calling JS -->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
