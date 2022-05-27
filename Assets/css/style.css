@@ -1,8 +1,8 @@
-/* setting color palette for page */
+/* color palette setting */
 :root {
     --primary: #ccdad1;
     --secondary: white;
-    --tertiary: #788585;
+    --tertiary: #788686;
     --light-dark: #5e7d71;
     --dark: #2e766e;
     --border-radius: 0.3rem;
