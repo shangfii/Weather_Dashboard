@@ -42,6 +42,6 @@ Case after multiple cities have been searched ( they are cashed)
 
 ## Technologies used
 
-1. API from https://openweathermap.org/ : 
+1. API from https://openweathermap.org/ : Access current weather data for any location on Earth including over 200,000 cities! The data is frequently updated based on the global and local weather models, satellites, radars and a vast network of weather stations.
 
 
