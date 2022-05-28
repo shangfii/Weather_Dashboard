@@ -27,7 +27,7 @@ THEN I am again presented with current and future conditions for that city
 
 [The App is live!](https://shangfii.github.io/Weather_Dashboard/)
 
-Open this l[ink](https://shangfii.github.io/Weather_Dashboard/) on any brower and search for any city, 
+Open this [link](https://shangfii.github.io/Weather_Dashboard/) on any brower and search for any city, 
 
 when you first open 
 
