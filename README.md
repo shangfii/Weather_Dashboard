@@ -43,7 +43,7 @@ Case of city that does not exist ( Yet )(It will products an alert)
 Case after multiple cities have been searched ( they are cashed and you can click to research them again)
 
 
-![Demonstration of app in use](https://github.com/shangfii/Weather_Dashboard/blob/main/Assets/images/ezgif.com-gif-maker%20(3).gif "Weather app in use)
+![Demonstration of app in use](https://github.com/shangfii/Weather_Dashboard/blob/main/Assets/images/ezgif.com-gif-maker%20(3).gif "Weather app in use")
 
 
 ## Technologies used
