@@ -1,8 +1,9 @@
-// querySelectors from HTML list
+// querySelectors from HTML list, We could use jQuery but I do not like dependencies if avoidable
 
+var nameInputEl = document.querySelector('#searchCity');
+var currentWeatherCard = document.querySelector('#currentWeather');
 var cityFormEl = document.querySelector('#city-form');
 var searchHistoryButtonsEl = document.querySelector('#searchHistory-buttons');
-var nameInputEl = document.querySelector('#searchCity');
 var fiveDayWeatherEl = document.querySelector('#fiveDayWeather');
 var cityAndDateEl = document.querySelector('#cityWeather');
 var currentTemp = document.querySelector('#tempResult');
@@ -10,7 +11,7 @@ var currentWind = document.querySelector('#windResult');
 var currentHumidity = document.querySelector('#humidityResult');
 var currentUvIndex = document.querySelector('#uvIndexResult');
 var currentIconEl = document.querySelector('#currentIcon');
-var currentWeatherCard = document.querySelector('#currentWeather');
+
 
 
 // function to populate search history card calling localStorage

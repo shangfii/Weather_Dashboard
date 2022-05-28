@@ -5,14 +5,14 @@
     --tertiary: #788686;
     --light-dark: #5e7d71;
     --dark: #182970;
-    --border-radius: 0.3rem;
+    --border-radius: 0.2rem;
   }
   
   * {
     box-sizing: border-box;
   }
   
-  /* defining properties for different tags */
+  /* properties for different tags */
   body {
     background-color: var(--secondary);
     margin: 0;
@@ -20,7 +20,7 @@
     font-family:  Serif Pro;
     color: var(--dark);
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 18px;
   }
   
   h1,
@@ -32,7 +32,7 @@
     font-weight: 700;
     margin: 0;
     color: var(--dark);
-    line-height: 1.25;
+    line-height: 1.30;
   }
   
   main {
@@ -44,7 +44,7 @@
     font-size: 1.2rem;
   }
   
-  /* setting left margin for current weather condition data */
+  /* left margin for current weather condition info */
   .card p,
   #cityWeather {
     margin-left: 1%;
@@ -57,7 +57,7 @@
   
   #currentIcon {
     display: inline;
-    margin-left: 5px;
+    margin-left: 3px;
   }
   
   /* setting properties for all buttons */
@@ -99,7 +99,7 @@
     display: inline-block;
     width: auto;
     margin-top: 20px;
-    padding: 15px;
+    padding: 13px;
     text-decoration: none;
     font-size: 1.2rem;
   }
@@ -111,32 +111,32 @@
     box-shadow: 2px 2px var(--dark);
   }
   
-  /* setting properties for classes used on header */
+  /* properties for classes used on header */
   .hero {
-    padding: 2% 3%;
+    padding: 2% 2%;
     background-color: var(--dark);
     color: var(--primary);
     text-align: center;
   }
   
   .app-title {
-    font-size: 3rem;
+    font-size: 5rem;
     background-color: var(--secondary);
     color: var(--dark);
     padding: 0 10px;
     display: inline-block;
     border-radius: var(--border-radius);
-    box-shadow: 6px 5px var(--light-dark);
+    box-shadow: 7px 6px var(--light-dark);
   }
   
-  /* setting properties for weather condition values when displayed */
+  /* properties for weather condition values when displayed */
   .info-group {
     padding: 0;
     list-style: none;
   }
   
   .list-item {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 1.5%;
     border-radius: var(--border-radius);
     background-color: var(--light-dark);

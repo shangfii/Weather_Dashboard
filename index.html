@@ -35,9 +35,10 @@
     <p> To see weather forcast, type the name of any city or click on a city you seached earlier </p> 
   </header>
 
-  <!-- CSS sheet is similar to Bootstrame framework, where rows and col classes are used to dynamically modify window width, depending on screen size-->
+  <!-- Bootstrap style framework, where rows and col classes are used to dynamically modify window width, depending on screen size-->
   <main class="flex-row justify-space-between">
-    <!-- divs for search bar and search history contents -->
+
+    <!-- divs for the search bar and search history contents -->
     <div class="col-12 col-md-4">
       <div class="card">
         <h3 class="card-header ">Search for any City:</h3>
@@ -54,21 +55,21 @@
       </div>
     </div>
 
-    <!-- display the current weather conditions and five day forcast -->
+    <!-- display the current weather conditions and five days forcast -->
     
     <div class="col-12 col-md-8">
       <div class="card" id="currentWeather">
         <h2 class="subtitle" id="cityWeather">City (Date)</h2><img id="currentIcon">
         <div class="info-group">
           <p>Temp:<span id="tempResult"></span></p>
-          <p>Wind:<span id="windResult"></span></p>
           <p>Humidity:<span id="humidityResult"></span></p>
+          <p>Wind:<span id="windResult"></span></p>
           <p>UV Index:<span id="uvIndexResult"></span></p>
         </div>
       </div>
 
       <div>
-        <h2 class="subtitle">5-Day Forcast:</h2>
+        <h2 class="subtitle">Next 5-Days:</h2>
         <div id="fiveDayWeather" class="flex-row justify-space-between">
         </div>
       </div>
