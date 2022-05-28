@@ -29,15 +29,19 @@ THEN I am again presented with current and future conditions for that city
 
 Open this [link](https://shangfii.github.io/Weather_Dashboard/) on any brower and search for any city, 
 
-when you first open 
+## Note these 
 
-When you search for a city
 
-Case of no city entered 
+When you first opens. ( There should be no city shown)
 
-Case of city that does not exist ( Yet )
+When you search for a city ( if the spelling is correct and it is in the system the forcast will show)
 
-Case after multiple cities have been searched ( they are cashed)
+Case of no city entered ( It will produce and alert requesting for a city to be entered)
+
+Case of city that does not exist ( Yet )(It will products an alert)
+
+Case after multiple cities have been searched ( they are cashed and you can click to research them again)
+
 
 
 ## Technologies used
