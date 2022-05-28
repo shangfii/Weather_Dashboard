@@ -23,3 +23,25 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
+## How to use this app
+
+The App is live!
+
+Open this link on any brower and search for any city, 
+
+when you first open 
+
+When you search for a city
+
+Case of no city entered 
+
+Case of city that does not exist ( Yet )
+
+Case after multiple cities have been searched ( they are cashed)
+
+
+## Technologies used
+
+1. API from https://openweathermap.org/ : 
+
+
