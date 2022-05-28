@@ -48,10 +48,9 @@ Case after multiple cities have been searched ( they are cashed and you can clic
 
 ## Technologies used
 
-1. API from https://openweathermap.org/ : Access current weather data for any location on Earth including over 200,000 cities! The data is frequently updated based on the global and local weather models, satellites, radars and a vast network of weather stations.
+0. API from https://openweathermap.org/ : Access current weather data for any location on Earth including over 200,000 cities! The data is frequently updated based on the global and local weather models, satellites, radars and a vast network of weather stations.
 
 
-## Technologies used:
 
 1. [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 
